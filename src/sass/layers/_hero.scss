@@ -1,0 +1,115 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    padding: 0;
+    max-width: 1360px;
+    margin: auto;
+
+    @media screen and(min-width:320px) {
+        background-image: linear-gradient(to left, var(--hero-overlay)40%,
+        var(--hero-overlay)100%),
+    url('./../images/home/showcase.jpg');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 160px 20px 104px;
+
+        @media (min-resolution: 2dppx){
+            background-image: linear-gradient(to left, var(--hero-overlay)40%,
+            var(--hero-overlay)100%),
+        url('./../images/home/showcase@2x.jpg');     
+        }
+    }
+
+    @media screen and(min-width:768px) {
+        padding: 589px 123px 378px;
+    }
+
+    @media screen and(min-width:1360px) {
+        padding: 441px 280px 270px;
+    }
+}
+
+.hero-main-title{
+    color: var(--white);
+    font-weight: 600;
+
+
+    @media screen and(min-width: 320px){
+        font-size: 40px;
+        font-weight: 55px;
+
+        margin-bottom: 16px;
+    }
+
+    @media screen and(min-width: 768px){
+        font-size: 55px;
+        font-weight: 75px;
+
+        margin-bottom: 16px;
+    }
+
+}
+
+.hero-sub-title{
+    color: var(--white);
+    font-weight: 400;
+    margin-top: 0;
+
+
+    @media screen and(min-width: 320px){
+        font-size: 26px;
+        font-weight: 32px;
+
+        margin-bottom: 24px;
+    }
+
+    @media screen and(min-width: 768px){
+        font-size: 40px;
+        font-weight: 48px;
+
+    }
+
+    @media screen and(min-width: 1360px){
+        font-size: 40px;
+        font-weight: 55px;
+
+    }
+}
+
+
+.hero-btn{
+    width: 175px;
+    height: 55px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--white);
+
+    border: none;
+    border-radius: 5px;
+    background-color: var(--green-main);
+
+    align-self: center;
+
+    transition: linear;
+    transition-duration: .25s;
+    transition-property: background-color;
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--green-hover);
+    }
+
+}
+
+.btn-arrow{
+    width: 15px;
+    height: 16px;
+}
