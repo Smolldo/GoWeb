@@ -34,3 +34,39 @@ ul, ol{
 p{
     margin: 0;
 }
+
+
+.cases-pic{
+    display: block;
+    max-height: 280px;
+}
+
+
+//icon-list
+.social-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.social-item + .social-item{
+    margin-left: 25px;
+}
+
+.social-icon{
+    width: 35px;
+    height: 35px;
+
+    fill: var(--white);
+
+    transition: linear;
+    transition-duration: .25s;
+    transition-property: filter;
+
+    &:hover{
+        filter: opacity(.8);
+    }
+}
+

@@ -1,7 +1,8 @@
-.home{
+.blog{
 
     @media screen and(min-width: 320px){
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
 
         margin-bottom: 56px;
     }
@@ -18,7 +19,7 @@
     }
 }
 
-.home-img{
+.blog-photo{
     display: block;
 
     max-width: 100%;
@@ -29,8 +30,8 @@
 }
 
 
-.home-explain-block{
-    background-color: var(--green-main);
+.blog-explain-block{
+    background-color: var(--blog-background);
 
     @media screen and(min-width: 320px){
         padding: 80px 20px;
@@ -46,9 +47,10 @@
 
 }
 
-.explain-text{
+.blog-explain-text{
     color: var(--white);
     font-weight: 400;
+    max-width: 642px;
 
     @media screen and(min-width: 320px){
         font-size: 16px;
@@ -61,7 +63,7 @@
     }
 }
 
-.explain-title{
+.blog-explain-title{
     color: var(--white);
     font-weight: 400;
 
@@ -81,7 +83,7 @@
 
 }
 
-.explain-btn{
+.blog-explain-btn{
     width: 155px;
     height: 55px;
     margin-top: 24px;
@@ -109,7 +111,7 @@
     
     &:hover{
         cursor: pointer;
-        color: var(--green-main);
+        color: var(--blog-background);
         background-color: var(--form-color);
     }
 }
