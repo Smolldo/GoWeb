@@ -1,31 +1,43 @@
-<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-<section class="callback">
+
+<section class="callback" id="contact">
         <picture>
-            <source srcset="./images/home/contact.jpg 1x, ./images/home/contact@2x.jpg 2x">
+            <source srcset="./images/home/contact.jpg 1x,
+                            ./images/home/contact@2x.jpg 2x
+                            ./images/home/contact.webp 1x,
+                            ./images/home/contact@2x.webp 2x">
             <img src="./images/home/contact.jpg" alt="contact-photo" class="contact-photo">
         </picture>
-        <div class="root"></div>
-        <script type="text/label">
-            reactDOM.render(
-                <form name="contact" method="post">
-                    <p>
-                      <label>Your Name: <input type="text" name="name"/></label>
-                    </p>
-                    <p>
-                      <label>Your Email: <input type="email" name="email"/></label>
-                    </p>
-                    <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit">Send</button>
-                    </p>
-                  </form>,
-                  document.getElementById("root")
-            )
-        </script>
+        <div class="form-block">
+          <h3 class="form-title">Request Callback</h3>
+          <div id="root">
+            <form action="" class="callback-form" data-netlify="true">
+              <div class="input-cover">
+              <input type="text" class="js-input-name js-input" id="inp"/>
+              <label for="" class="input-text">Enter Your name</label>
+              </div>
+            <div class="input-cover">
+            <input type="email" class="js-input-email js-input" id="inp"/>
+            <label>Enter Your Email*</label>
+            </div>
+          <span class="error-text">
+            <svg class="err-icon" width="16px" height="16px">
+              <use href="./images/symbol-defs.svg#icon-warning-sign-svgrepo-com"></use>
+            </svg>
+            Fields must be required!
+          </span>
+          <button class="form-btn js-button">Send</button>
+      </form>
+          </div>
+        </div>
+
 </section>
 
+<!--Modal-->
+<div class="modal backdrop">
+  <div class="modal-content">
+    <h4 class="modal-title">Thank you!</h4>
+    <p class="modal-text">Your form submission has been recieved</p>
+    <a href="" class="modal-link"> &#8592; Back to our site</a>
+  </div>
+</div>

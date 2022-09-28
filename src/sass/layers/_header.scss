@@ -1,35 +1,40 @@
 .header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 900;
+}
 
+.header-container{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.header-body{
+    
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    
     @media screen and(min-width: 320px){
-        display: flex;
         flex-direction: column;
         height: 120px;
+        
+        justify-content: center;
+
+        padding: 0px 25px;
     }
 
     @media screen and(min-width: 768px){
-        display: flex;
         flex-direction: row;
         height: 70px;
+        justify-content: space-between;
+        padding: 0px 30px;  
     }
 }
 
-.logo{
-    @media screen and(min-width: 320px){
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media screen and(min-width: 768px){
-        margin-left: 32px;
-    }
-
-    @media screen and(min-width: 1360px){
-        margin-left: 28px;
-    }
-}
 
 .logo-link{
     color: var(--white);
@@ -48,11 +53,23 @@
     @media screen and(min-width: 320px){
         font-size: 28px;
         line-height: 38px;
+        margin-bottom: 20px;
+
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and(min-width: 768px){
         font-size: 35px;
         line-height: 48px;
+
+        margin-bottom: 0;
+
+        margin-left: 32px;
+    }
+
+    @media screen and(min-width: 1360px){
+        margin-left: 28px;
     }
 
 
@@ -61,25 +78,7 @@
         filter: brightness(1.2);
     }
 }
-
-.nav-menu{
-    align-self: center;
-
-    @media screen and(min-width: 320px){
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media screen and(min-width: 768px){
-        margin-right: 32px;
-        margin-left: auto;
-    }
-
-    @media screen and(min-width: 1360px){
-        margin-right: 28px;
-        margin-left: auto;
-    }
-}
+//
 
 .nav-list{
     display: flex;
@@ -133,3 +132,6 @@
     }
 }
 
+.header-scrolling{
+    background-color: rgba(0,0,0, .8);
+}

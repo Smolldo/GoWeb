@@ -98,7 +98,7 @@
 
         grid-row-gap: 30px;
 
-        padding: 0 20px;
+        padding: 0px 20px;
     }
 
     @media screen and(min-width: 768px){
@@ -107,14 +107,14 @@
         grid-template-columns: 224px 224px 224px;
         grid-gap: 18px;
 
-        padding: 0 30px;
+        padding: 0px 30px;
     }
 
     @media screen and(min-width: 1360px){
         grid-template-columns: 420px 420px 420px;
         grid-gap:20px;
    
-        padding: 0 20px;
+        padding: 0px 20px;
     }
 }
 
@@ -124,6 +124,17 @@
     max-height: 290px;
 
     display: block;
+}
+
+.social-list-cover{
+    transition: linear;
+    transition-duration: .25s;
+    transition-property: transform, box-shadow;
+
+    &:hover{
+        transform: scale(1.025);
+        box-shadow: 3px 3px 3px var(--text-color);
+    }
 }
 
 
@@ -138,7 +149,7 @@
 .social-list-cover{
     position: relative;
 
-    z-index: 999;
+    z-index: 800;
 }
 
 .overlay{

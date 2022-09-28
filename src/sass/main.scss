@@ -1,5 +1,11 @@
+//utils
+@import "./utils/variables";
+
+//base
 @import "./base/common";
 @import "./base/container";
+
+//layers
 @import "./layers/hero";
 @import "./layers/home";
 @import "./layers/cases";
@@ -7,9 +13,8 @@
 
 @import "./layers/team";
 @import "./layers/footer";
+@import "./layers/callback";
 
-
+@import "./layers/modal";
 
 @import "./layers/header";
-
-@import "./utils/variables";

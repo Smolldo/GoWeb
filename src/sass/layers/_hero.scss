@@ -11,7 +11,7 @@
     @media screen and(min-width:320px) {
         background-image: linear-gradient(to left, var(--hero-overlay)40%,
         var(--hero-overlay)100%),
-    url('./../images/home/showcase.jpg');  
+    url('./../images/home/showcase.jpg ');  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,11 +100,11 @@
 
     transition: linear;
     transition-duration: .25s;
-    transition-property: background-color;
+    transition-property: filter;
 
     &:hover{
         cursor: pointer;
-        background-color: var(--green-hover);
+        filter: opacity(.8);
     }
 
 }
